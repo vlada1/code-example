@@ -1,0 +1,45 @@
+.login-page {
+  display: flex;
+  min-height: 100%;
+  padding: 20px;
+  background-color: #E5E5E5;
+  @media screen and (max-width: 508px) {
+    padding: 0;
+  }
+}
+
+.login-container {
+  width: 560px;
+  padding: 44px 20px 20px;
+  border-radius: $border-radius;
+  justify-content: center;
+  @media screen and (max-width: 508px) {
+    border-radius: 0;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .ant-card-body {
+    display: grid;
+    grid-auto-rows: auto 5fr auto;
+    text-align: center;
+    max-width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    &:before, &:after {
+      display: none;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: $font-size-sm;
+  color: $secondary-text-light;
+  a {
+    color: $secondary-text-light;
+  }
+}
